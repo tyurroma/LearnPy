@@ -13,7 +13,7 @@ school = [{'school_class': '1a', 'scores': [3,4,4,5,2]},
         ]
 
 classes_count = 0
-sum_score = 0
+sum_avg_score = 0
 school_avg_score = 0
 
 for classes in school:
@@ -21,8 +21,8 @@ for classes in school:
     for score in classes:
         score = classes['scores']
         avg_score = sum(score) / len(score)
-    sum_score += avg_score
+    sum_avg_score += avg_score
     print('{} has average score {}'.format(classes['school_class'], avg_score))
-school_avg_score = sum_score / classes_count
+school_avg_score = sum_avg_score / classes_count
 
 print('Entire school has average score {}'.format(school_avg_score))
