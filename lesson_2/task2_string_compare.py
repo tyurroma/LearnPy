@@ -9,17 +9,21 @@
 
 def compare(str1, str2):
     if str1.isdigit() == True and str2.isdigit() == True:
-        print(0)
+        return 0
     if str1 == str2:
-        print(1)
+        return 1
     else:
         if len(str1) > len(str2):
-            print(2)
+            return 2
         elif str2 == 'learn':
-            print(3)
+            return 3
 
 
-compare('str1', 'str1')
-compare('ghdbtnsadsdf', 'str23sd')
-compare('1', '2')
-compare('learn', 'learn')
+test1 = compare('str1', 'str1')
+print(test1)
+test2 = compare('ghdbtnsadsdf', 'str23sd')
+print(test2)
+test3 = compare('1', '2')
+print(test3)
+test4 = compare('learn', 'learn')
+print(test4)
