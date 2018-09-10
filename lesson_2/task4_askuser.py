@@ -15,8 +15,8 @@ def ask_user():
             print('Bye!')
             break
         else:
-            for count in q_a:
-                if count == user_text:
-                    print(q_a[count])
+            for answer in q_a:
+                if answer == user_text:
+                    print(q_a[answer])
 
 ask_user()
