@@ -25,5 +25,5 @@ if __name__ == '__main__':
             {'school_class': '1d', 'scores': [5,3,5,5,2]}, 
             {'school_class': '1e', 'scores': [3,3,2,5,2]}, 
             ]
-            
+
     marks(school)
