@@ -10,14 +10,14 @@
 def compare(str1, str2):
     if isinstance(str1, str) == False or isinstance(str2, str) == False:
         return 0
+    elif str1 == str2:
+        return 1
+    elif len(str1) > len(str2):
+        return 2
+    elif str2 == 'learn':
+        return 3
     else:
-        if str1 == str2:
-            return 1
-        else:
-            if len(str1) > len(str2):
-                return 2
-            elif str2 == 'learn':
-                return 3
+        return 'nothing'
 
 test1 = compare('str1', 1)
 print(test1)
