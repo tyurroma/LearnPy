@@ -8,7 +8,7 @@
 '''
 
 def compare(str1, str2):
-    if isinstance(str1, str) == False or isinstance(str2, str) == False:
+    if not isinstance(str1, str) or not isinstance(str2, str):
         return 0
     elif str1 == str2:
         return 1

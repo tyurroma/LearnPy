@@ -22,5 +22,15 @@ def definition(age):
     else:
         print('You are too young for kindergarten')
 
-age = int(input('Enter your age: '))
-definition(age)
+
+if __name__ == '__main__':
+    while True:
+        age = input('Enter age: ')
+        if age.isdigit():
+            age = int(age)
+            definition(age)
+        else:
+            print('Input int only!')
+            continue
+
+    

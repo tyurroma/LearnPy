@@ -14,9 +14,9 @@ def ask_user():
         if user_text == 'Good':
             print('Bye!')
             break
-        else:
-            for answer in q_a:
-                if answer == user_text:
-                    print(q_a[answer])
+        elif user_text in q_a:
+            print(q_a.get(user_text))
 
-ask_user()
+
+if __name__ == '__main__':
+    ask_user()

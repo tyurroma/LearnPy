@@ -8,19 +8,18 @@
 q_a = {'How are you?': 'Fine', 'What are you doing?': 'Developing'}
 
 def ask_user():
-    try:
-            while True:
-                user_text = input('Enter something: ')
-                if user_text == 'Good':
-                    print('Bye!')
-                    break
-                else:
-                    for answer in q_a:
-                        if answer == user_text:
-                            print(q_a[answer])
-                    else:
-                        print('You entered: {}'.format(user_text))                        
-    except KeyboardInterrupt:
-            print(' You pushed Ctrl+C, Bye-bye!')
+    while True:
+        try:
+            user_text = input('Enter something: ')
+            if user_text == 'Good':
+                print('Bye!')
+                break
+            elif user_text in q_a:
+                print(q_a.get(user_text))
+        except KeyboardInterrupt:
+            print('\nYou pushed Ctrl+C, Bye-bye!')
+            break
+            
 
-ask_user()
+if __name__ == '__main__':
+    ask_user()
