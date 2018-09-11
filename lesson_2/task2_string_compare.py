@@ -8,22 +8,22 @@
 '''
 
 def compare(str1, str2):
-    if str1.isdigit() == True and str2.isdigit() == True:
+    if isinstance(str1, str) == False or isinstance(str2, str) == False:
         return 0
-    if str1 == str2:
-        return 1
     else:
-        if len(str1) > len(str2):
-            return 2
-        elif str2 == 'learn':
-            return 3
+        if str1 == str2:
+            return 1
+        else:
+            if len(str1) > len(str2):
+                return 2
+            elif str2 == 'learn':
+                return 3
 
-
-test1 = compare('str1', 'str1')
+test1 = compare('str1', 1)
 print(test1)
 test2 = compare('ghdbtnsadsdf', 'str23sd')
 print(test2)
-test3 = compare('1', '2')
+test3 = compare('sdf1', '2slajhbf')
 print(test3)
 test4 = compare('learn', 'learn')
 print(test4)
