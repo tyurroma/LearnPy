@@ -18,14 +18,14 @@ def compare(str1, str2):
         return 3
     else:
         return 'nothing'
-
-test1 = compare('str1', 1)
-print(test1)
-test2 = compare('ghdbtnsadsdf', 'str23sd')
-print(test2)
-test3 = compare('sdf1', '2slajhbf')
-print(test3)
-test4 = compare('learn', 'learn')
-print(test4)
-test5 = compare('py', 'learn')
-print(test5)
+if __name__ == '__main__':
+    test1 = compare('str1', 1)
+    print(test1)
+    test2 = compare('ghdbtnsadsdf', 'str23sd')
+    print(test2)
+    test3 = compare('sdf1', '2slajhbf')
+    print(test3)
+    test4 = compare('learn', 'learn')
+    print(test4)
+    test5 = compare('py', 'learn')
+    print(test5)
