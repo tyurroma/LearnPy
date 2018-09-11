@@ -18,6 +18,8 @@ def compare(str1, str2):
         return 3
     else:
         return 'nothing'
+
+
 if __name__ == '__main__':
     test1 = compare('str1', 1)
     print(test1)
