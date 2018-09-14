@@ -5,17 +5,29 @@ def brackets_compare(str1):
     k2 = 0
     
     for i in str1:
-        if open_bracket == i:
+        if i == open_bracket:
             k1 += 1
-        if close_bracket == i:
+        if i == close_bracket:
             k2 += 1
+            if str1[0] == close_bracket:
+                return False
+                continue
+    
     print(k1)
     print(k2)        
+    
     if k1 == k2:
         return True
     else:
         return False
 
 if __name__ == '__main__':
-    str1 = '()())'
+    str1 = '()()'
     print(brackets_compare(str1))
+    str1 = ')()('
+    print(brackets_compare(str1))
+    str1 = ')(()())'
+    print(brackets_compare(str1))
+    str1 = '((())()('
+    print(brackets_compare(str1))
+
