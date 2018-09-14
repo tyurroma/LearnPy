@@ -7,6 +7,9 @@ def brackets_compare(str1):
     for i in str1:
         if i == open_bracket:
             k1 += 1
+            if str1[-1] == open_bracket:
+                return False
+                continue
         if i == close_bracket:
             k2 += 1
             if str1[0] == close_bracket:
@@ -18,12 +21,14 @@ def brackets_compare(str1):
         return False
 
 if __name__ == '__main__':
-    str1 = '()()'
-    print(brackets_compare(str1))
     str1 = ')()('
+    print(brackets_compare(str1))
+    str1 = '())()('
     print(brackets_compare(str1))
     str1 = ')(()())'
     print(brackets_compare(str1))
     str1 = '((())()('
+    print(brackets_compare(str1))
+    str1 = '())('
     print(brackets_compare(str1))
 
