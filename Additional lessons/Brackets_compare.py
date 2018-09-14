@@ -12,10 +12,6 @@ def brackets_compare(str1):
             if str1[0] == close_bracket:
                 return False
                 continue
-    
-    print(k1)
-    print(k2)        
-    
     if k1 == k2:
         return True
     else:
