@@ -15,6 +15,7 @@ def words_in_file_content(filename):
             return len(content)
     except FileNotFoundError:
         print("File doesn't exist!")
+
 def replace_dots_file_content(filename):
     try:
         with open(filename, 'r', encoding='utf-8') as myfile:
@@ -26,6 +27,7 @@ def replace_dots_file_content(filename):
     with open('referat2.txt', 'w', encoding='utf-8') as myfile:
         myfile.write(content)
     print('Success!')
+
 
 if __name__ == '__main__':
     test1 = length_of_file_content('referat.txt')
