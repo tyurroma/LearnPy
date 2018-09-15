@@ -1,7 +1,7 @@
 import csv
 
 list_of_dict = [
-                {'name': 'Masha', 'age': 25, 'job': 'Scientist', 'salary': 170000}, 
+                {'name': 'Masha', 'age': 25, 'job': 'Scientist'}, 
                 {'name': 'Vasya', 'age': 8, 'job': 'Programmer'}, 
                 {'name': 'Edouard', 'age': 48, 'job': 'Big boss'},
                 ]
