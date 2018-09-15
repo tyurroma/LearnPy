@@ -21,12 +21,16 @@ def replace_dots_file_content(filename):
         with open(filename, 'r', encoding='utf-8') as myfile:
             content = myfile.read()
             content = content.replace('.', '!')
+        
+        with open('referat2.txt', 'w', encoding='utf-8') as myfile:
+            myfile.write(content)
+        
+        print('Success!')
+
     except FileNotFoundError:
         print("File doesn't exist!")
 
-    with open('referat2.txt', 'w', encoding='utf-8') as myfile:
-        myfile.write(content)
-    print('Success!')
+    
 
 
 if __name__ == '__main__':
